@@ -1,2 +1,0 @@
-#!/bin/bash
-rsync -av --delete ~/git/HydroMFHM/ /media/guenardg/sshfs/git/
