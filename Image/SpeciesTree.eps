@@ -1,0 +1,2785 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Helvetica-Oblique
+%%+ font Helvetica-BoldOblique
+%%+ font Symbol
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%BoundingBox: 0 0 323 1440
+%%EndComments
+%%BeginProlog
+/bp  { gs sRGB gs } def
+% begin .ps.prolog
+/gs  { gsave } bind def
+/gr  { grestore } bind def
+/ep  { showpage gr gr } bind def
+/m   { moveto } bind def
+/l  { rlineto } bind def
+/np  { newpath } bind def
+/cp  { closepath } bind def
+/f   { fill } bind def
+/o   { stroke } bind def
+/c   { newpath 0 360 arc } bind def
+/r   { 4 2 roll moveto 1 copy 3 -1 roll exch 0 exch rlineto 0 rlineto -1 mul 0 exch rlineto closepath } bind def
+/p1  { stroke } bind def
+/p2  { gsave bg fill grestore newpath } bind def
+/p3  { gsave bg fill grestore stroke } bind def
+/p6  { gsave bg eofill grestore newpath } bind def
+/p7  { gsave bg eofill grestore stroke } bind def
+/t   { 5 -2 roll moveto gsave rotate
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } bind def
+/ta  { 4 -2 roll moveto gsave rotate show } bind def
+/tb  { 2 -1 roll 0 rmoveto show } bind def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } bind def
+/rgb { setrgbcolor } bind def
+/s   { scalefont setfont } bind def
+% end   .ps.prolog
+/sRGB { [ /CIEBasedABC
+          << /DecodeLMN
+               [ { dup 0.03928 le
+                        {12.92321 div}
+                        {0.055 add 1.055 div 2.4 exp }
+                     ifelse
+                 } bind dup dup
+               ]
+             /MatrixLMN [0.412457 0.212673 0.019334
+                         0.357576 0.715152 0.119192
+                         0.180437 0.072175 0.950301]
+             /WhitePoint [0.9505 1.0 1.0890]
+           >>
+         ] setcolorspace } bind def
+/srgb { setcolor } bind def
+%%IncludeResource: font Helvetica
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font Helvetica-Oblique
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font Helvetica-BoldOblique
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font Symbol
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+0.00 0.00 323.25 1439.96 cl
+59.04 73.44 293.01 1380.92 cl
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+67.71 133.94 m
+0.15 0 l
+o
+np
+67.86 126.69 m
+1.17 0 l
+o
+np
+69.03 121.87 m
+6.55 0 l
+o
+np
+69.03 131.52 m
+1.75 0 l
+o
+np
+70.78 128.30 m
+2.91 0 l
+o
+np
+70.78 134.74 m
+3.92 0 l
+o
+np
+67.86 141.18 m
+5.98 0 l
+o
+np
+67.71 650.72 m
+4.38 0 l
+o
+np
+72.09 161.31 m
+0.82 0 l
+o
+np
+72.91 152.45 m
+3.62 0 l
+o
+np
+76.53 147.62 m
+5.71 0 l
+o
+np
+76.53 157.28 m
+5.13 0 l
+o
+np
+81.66 154.06 m
+0.93 0 l
+o
+np
+81.66 160.50 m
+1.85 0 l
+o
+np
+72.91 170.16 m
+2.76 0 l
+o
+np
+75.67 166.94 m
+6.24 0 l
+o
+np
+75.67 173.38 m
+7.88 0 l
+o
+np
+72.09 1140.14 m
+2.50 0 l
+o
+np
+74.59 954.22 m
+0.64 0 l
+o
+np
+75.23 594.45 m
+0.23 0 l
+o
+np
+75.46 210.86 m
+0.88 0 l
+o
+np
+76.34 187.87 m
+11.20 0 l
+o
+np
+87.54 179.82 m
+5.16 0 l
+o
+np
+87.54 195.92 m
+0.88 0 l
+o
+np
+88.42 189.48 m
+1.67 0 l
+o
+np
+90.09 186.26 m
+1.27 0 l
+o
+np
+90.09 192.70 m
+1.50 0 l
+o
+np
+88.42 202.36 m
+1.34 0 l
+o
+np
+89.76 199.14 m
+1.94 0 l
+o
+np
+89.76 205.58 m
+2.44 0 l
+o
+np
+76.34 233.85 m
+0.73 0 l
+o
+np
+77.07 212.02 m
+13.92 0 l
+o
+np
+77.07 255.69 m
+0.35 0 l
+o
+np
+77.42 232.95 m
+0.90 0 l
+o
+np
+78.32 223.29 m
+5.00 0 l
+o
+np
+83.32 218.46 m
+8.60 0 l
+o
+np
+83.32 228.12 m
+1.82 0 l
+o
+np
+85.14 224.90 m
+6.85 0 l
+o
+np
+85.14 231.34 m
+6.57 0 l
+o
+np
+78.32 242.61 m
+8.27 0 l
+o
+np
+86.59 237.78 m
+6.70 0 l
+o
+np
+86.59 247.44 m
+0.80 0 l
+o
+np
+87.39 244.22 m
+6.60 0 l
+o
+np
+87.39 250.66 m
+5.66 0 l
+o
+np
+77.42 278.43 m
+0.74 0 l
+o
+np
+78.16 267.56 m
+2.10 0 l
+o
+np
+80.26 260.31 m
+1.59 0 l
+o
+np
+81.85 257.10 m
+12.04 0 l
+o
+np
+81.85 263.53 m
+9.25 0 l
+o
+np
+80.26 274.80 m
+9.20 0 l
+o
+np
+89.46 269.97 m
+1.70 0 l
+o
+np
+89.46 279.63 m
+1.27 0 l
+o
+np
+90.73 276.41 m
+0.19 0 l
+o
+np
+90.73 282.85 m
+0.20 0 l
+o
+np
+78.16 289.29 m
+12.01 0 l
+o
+np
+75.46 978.04 m
+0.22 0 l
+o
+np
+75.68 708.28 m
+0.43 0 l
+o
+np
+76.11 658.78 m
+0.65 0 l
+o
+np
+76.76 592.00 m
+2.15 0 l
+o
+np
+78.91 486.25 m
+1.82 0 l
+o
+np
+80.73 422.93 m
+1.80 0 l
+o
+np
+82.53 408.46 m
+0.79 0 l
+o
+np
+83.32 389.18 m
+0.93 0 l
+o
+np
+84.25 360.28 m
+0.63 0 l
+o
+np
+84.88 322.90 m
+0.29 0 l
+o
+np
+85.17 309.42 m
+0.52 0 l
+o
+np
+85.69 303.78 m
+0.41 0 l
+o
+np
+86.10 298.95 m
+1.22 0 l
+o
+np
+87.32 295.73 m
+2.88 0 l
+o
+np
+87.32 302.17 m
+3.68 0 l
+o
+np
+86.10 308.61 m
+5.81 0 l
+o
+np
+85.69 315.05 m
+5.90 0 l
+o
+np
+85.17 336.38 m
+0.50 0 l
+o
+np
+85.67 324.71 m
+0.30 0 l
+o
+np
+85.97 321.49 m
+8.07 0 l
+o
+np
+85.97 327.93 m
+5.14 0 l
+o
+np
+85.67 348.05 m
+1.98 0 l
+o
+np
+87.65 342.42 m
+1.04 0 l
+o
+np
+88.69 337.59 m
+1.89 0 l
+o
+np
+90.58 334.37 m
+0.84 0 l
+o
+np
+90.58 340.81 m
+0.71 0 l
+o
+np
+88.69 347.25 m
+2.70 0 l
+o
+np
+87.65 353.69 m
+3.60 0 l
+o
+np
+84.88 397.66 m
+0.26 0 l
+o
+np
+85.14 386.89 m
+0.06 0 l
+o
+np
+85.20 375.02 m
+0.41 0 l
+o
+np
+85.61 363.35 m
+4.42 0 l
+o
+np
+90.03 360.13 m
+0.12 0 l
+o
+np
+90.03 366.57 m
+0.07 0 l
+o
+np
+85.61 386.69 m
+0.46 0 l
+o
+np
+86.07 381.06 m
+0.74 0 l
+o
+np
+86.81 376.23 m
+2.03 0 l
+o
+np
+88.84 373.01 m
+2.15 0 l
+o
+np
+88.84 379.45 m
+1.22 0 l
+o
+np
+86.81 385.89 m
+3.87 0 l
+o
+np
+86.07 392.33 m
+5.25 0 l
+o
+np
+85.20 398.76 m
+4.53 0 l
+o
+np
+85.14 408.42 m
+0.46 0 l
+o
+np
+85.60 405.20 m
+6.24 0 l
+o
+np
+85.60 411.64 m
+5.79 0 l
+o
+np
+84.25 418.08 m
+7.50 0 l
+o
+np
+83.32 427.74 m
+0.81 0 l
+o
+np
+84.13 424.52 m
+5.30 0 l
+o
+np
+84.13 430.96 m
+5.92 0 l
+o
+np
+82.53 437.40 m
+11.51 0 l
+o
+np
+80.73 549.57 m
+0.93 0 l
+o
+np
+81.66 512.01 m
+0.20 0 l
+o
+np
+81.86 468.19 m
+0.40 0 l
+o
+np
+82.26 448.67 m
+1.02 0 l
+o
+np
+83.28 443.84 m
+8.76 0 l
+o
+np
+83.28 453.50 m
+2.12 0 l
+o
+np
+85.40 450.28 m
+6.31 0 l
+o
+np
+85.40 456.72 m
+5.52 0 l
+o
+np
+82.26 487.71 m
+0.55 0 l
+o
+np
+82.81 472.82 m
+1.39 0 l
+o
+np
+84.20 466.38 m
+0.61 0 l
+o
+np
+84.81 463.16 m
+9.98 0 l
+o
+np
+84.81 469.60 m
+7.88 0 l
+o
+np
+84.20 479.26 m
+2.04 0 l
+o
+np
+86.24 476.04 m
+6.81 0 l
+o
+np
+86.24 482.48 m
+6.98 0 l
+o
+np
+82.81 502.60 m
+1.89 0 l
+o
+np
+84.70 496.97 m
+0.50 0 l
+o
+np
+85.20 492.14 m
+4.57 0 l
+o
+np
+89.77 488.92 m
+2.57 0 l
+o
+np
+89.77 495.36 m
+3.59 0 l
+o
+np
+85.20 501.80 m
+5.12 0 l
+o
+np
+84.70 508.24 m
+5.34 0 l
+o
+np
+81.86 555.83 m
+1.89 0 l
+o
+np
+83.75 539.03 m
+0.17 0 l
+o
+np
+83.92 522.73 m
+1.16 0 l
+o
+np
+85.08 517.90 m
+0.52 0 l
+o
+np
+85.60 514.68 m
+5.84 0 l
+o
+np
+85.60 521.12 m
+4.27 0 l
+o
+np
+85.08 527.56 m
+6.13 0 l
+o
+np
+83.92 555.33 m
+1.21 0 l
+o
+np
+85.13 547.68 m
+0.59 0 l
+o
+np
+85.72 542.04 m
+2.30 0 l
+o
+np
+88.02 537.21 m
+1.19 0 l
+o
+np
+89.21 533.99 m
+0.32 0 l
+o
+np
+89.21 540.43 m
+0.46 0 l
+o
+np
+88.02 546.87 m
+1.68 0 l
+o
+np
+85.72 553.31 m
+3.52 0 l
+o
+np
+85.13 562.97 m
+3.92 0 l
+o
+np
+89.05 559.75 m
+1.84 0 l
+o
+np
+89.05 566.19 m
+2.56 0 l
+o
+np
+83.75 572.63 m
+6.72 0 l
+o
+np
+81.66 587.12 m
+0.63 0 l
+o
+np
+82.29 582.29 m
+1.54 0 l
+o
+np
+83.83 579.07 m
+6.52 0 l
+o
+np
+83.83 585.51 m
+6.85 0 l
+o
+np
+82.29 591.95 m
+9.41 0 l
+o
+np
+78.91 697.75 m
+0.53 0 l
+o
+np
+79.44 684.41 m
+1.49 0 l
+o
+np
+80.93 672.23 m
+1.00 0 l
+o
+np
+81.93 662.36 m
+1.09 0 l
+o
+np
+83.02 649.05 m
+0.83 0 l
+o
+np
+83.85 636.12 m
+0.65 0 l
+o
+np
+84.50 628.78 m
+3.89 0 l
+o
+np
+88.39 620.53 m
+0.26 0 l
+o
+np
+88.65 610.46 m
+0.52 0 l
+o
+np
+89.17 601.61 m
+0.79 0 l
+o
+np
+89.96 598.39 m
+2.27 0 l
+o
+np
+89.96 604.83 m
+1.91 0 l
+o
+np
+89.17 619.32 m
+0.41 0 l
+o
+np
+89.58 614.49 m
+0.59 0 l
+o
+np
+90.17 611.27 m
+1.03 0 l
+o
+np
+90.17 617.71 m
+1.14 0 l
+o
+np
+89.58 624.15 m
+2.20 0 l
+o
+np
+88.65 630.59 m
+2.91 0 l
+o
+np
+88.39 637.03 m
+4.35 0 l
+o
+np
+84.50 643.47 m
+8.20 0 l
+o
+np
+83.85 661.98 m
+0.83 0 l
+o
+np
+84.68 654.74 m
+1.68 0 l
+o
+np
+86.36 649.91 m
+4.37 0 l
+o
+np
+86.36 659.57 m
+2.05 0 l
+o
+np
+88.41 656.35 m
+1.95 0 l
+o
+np
+88.41 662.79 m
+2.00 0 l
+o
+np
+84.68 669.22 m
+4.37 0 l
+o
+np
+83.02 675.66 m
+8.03 0 l
+o
+np
+81.93 682.10 m
+7.44 0 l
+o
+np
+80.93 696.59 m
+4.54 0 l
+o
+np
+85.47 691.76 m
+4.30 0 l
+o
+np
+89.77 688.54 m
+0.43 0 l
+o
+np
+89.77 694.98 m
+0.15 0 l
+o
+np
+85.47 701.42 m
+4.26 0 l
+o
+np
+79.44 711.08 m
+2.38 0 l
+o
+np
+81.82 707.86 m
+7.36 0 l
+o
+np
+81.82 714.30 m
+8.20 0 l
+o
+np
+76.76 725.57 m
+2.82 0 l
+o
+np
+79.58 720.74 m
+12.76 0 l
+o
+np
+79.58 730.40 m
+9.15 0 l
+o
+np
+88.73 727.18 m
+2.24 0 l
+o
+np
+88.73 733.62 m
+2.17 0 l
+o
+np
+76.11 757.77 m
+0.82 0 l
+o
+np
+76.93 749.72 m
+0.75 0 l
+o
+np
+77.68 743.28 m
+4.22 0 l
+o
+np
+81.90 740.06 m
+8.14 0 l
+o
+np
+81.90 746.50 m
+9.83 0 l
+o
+np
+77.68 756.16 m
+7.51 0 l
+o
+np
+85.19 752.94 m
+3.85 0 l
+o
+np
+85.19 759.38 m
+4.89 0 l
+o
+np
+76.93 765.82 m
+14.04 0 l
+o
+np
+75.68 1247.80 m
+0.47 0 l
+o
+np
+76.15 1211.00 m
+0.30 0 l
+o
+np
+76.45 1168.39 m
+0.55 0 l
+o
+np
+77.00 1104.91 m
+0.32 0 l
+o
+np
+77.32 1002.89 m
+0.21 0 l
+o
+np
+77.53 874.16 m
+3.08 0 l
+o
+np
+80.61 814.16 m
+1.99 0 l
+o
+np
+82.60 772.26 m
+8.46 0 l
+o
+np
+82.60 856.07 m
+2.49 0 l
+o
+np
+85.09 843.29 m
+0.94 0 l
+o
+np
+86.03 827.39 m
+5.28 0 l
+o
+np
+91.31 805.25 m
+0.50 0 l
+o
+np
+91.81 778.70 m
+2.00 0 l
+o
+np
+91.81 831.80 m
+0.48 0 l
+o
+np
+92.29 823.72 m
+0.24 0 l
+o
+np
+92.53 817.23 m
+0.94 0 l
+o
+np
+93.47 810.69 m
+0.14 0 l
+o
+np
+93.61 804.05 m
+0.20 0 l
+o
+np
+93.81 797.21 m
+0.15 0 l
+o
+np
+93.96 789.97 m
+0.09 0 l
+o
+np
+94.05 785.14 m
+0 0 l
+o
+np
+94.05 794.80 m
+0 0 l
+o
+np
+94.05 791.58 m
+0 0 l
+o
+np
+94.05 798.02 m
+0 0 l
+o
+np
+93.96 804.45 m
+0.11 0 l
+o
+np
+93.81 810.89 m
+0.10 0 l
+o
+np
+93.61 817.33 m
+0.31 0 l
+o
+np
+93.47 823.77 m
+0.25 0 l
+o
+np
+92.53 830.21 m
+0.56 0 l
+o
+np
+92.29 839.87 m
+0.43 0 l
+o
+np
+92.72 836.65 m
+0.32 0 l
+o
+np
+92.72 843.09 m
+0.85 0 l
+o
+np
+91.31 849.53 m
+2.09 0 l
+o
+np
+86.03 859.19 m
+3.91 0 l
+o
+np
+89.94 855.97 m
+2.30 0 l
+o
+np
+89.94 862.41 m
+2.07 0 l
+o
+np
+85.09 868.85 m
+7.46 0 l
+o
+np
+80.61 934.15 m
+2.48 0 l
+o
+np
+83.09 912.52 m
+0.85 0 l
+o
+np
+83.94 890.99 m
+5.12 0 l
+o
+np
+89.06 880.92 m
+2.54 0 l
+o
+np
+91.60 875.29 m
+1.02 0 l
+o
+np
+91.60 886.56 m
+1.05 0 l
+o
+np
+92.65 881.73 m
+0.31 0 l
+o
+np
+92.65 891.39 m
+0.28 0 l
+o
+np
+92.93 888.17 m
+0.39 0 l
+o
+np
+92.93 894.61 m
+0.59 0 l
+o
+np
+89.06 901.05 m
+2.78 0 l
+o
+np
+83.94 934.05 m
+1.84 0 l
+o
+np
+85.78 925.20 m
+0.76 0 l
+o
+np
+86.54 917.15 m
+1.10 0 l
+o
+np
+87.64 910.71 m
+1.91 0 l
+o
+np
+89.55 907.49 m
+2.32 0 l
+o
+np
+89.55 913.93 m
+2.86 0 l
+o
+np
+87.64 923.59 m
+1.56 0 l
+o
+np
+89.20 920.37 m
+3.13 0 l
+o
+np
+89.20 926.81 m
+1.68 0 l
+o
+np
+86.54 933.25 m
+5.18 0 l
+o
+np
+85.78 942.90 m
+2.96 0 l
+o
+np
+88.74 939.68 m
+3.14 0 l
+o
+np
+88.74 946.12 m
+3.33 0 l
+o
+np
+83.09 955.78 m
+3.79 0 l
+o
+np
+86.88 952.56 m
+4.51 0 l
+o
+np
+86.88 959.00 m
+4.98 0 l
+o
+np
+77.53 1131.63 m
+0.36 0 l
+o
+np
+77.89 1069.20 m
+0.47 0 l
+o
+np
+78.36 1009.66 m
+2.06 0 l
+o
+np
+80.42 975.10 m
+0.57 0 l
+o
+np
+80.99 968.66 m
+5.14 0 l
+o
+np
+86.13 965.44 m
+5.69 0 l
+o
+np
+86.13 971.88 m
+5.32 0 l
+o
+np
+80.99 981.54 m
+1.34 0 l
+o
+np
+82.33 978.32 m
+9.53 0 l
+o
+np
+82.33 984.76 m
+11.74 0 l
+o
+np
+80.42 1044.23 m
+1.40 0 l
+o
+np
+81.82 1026.42 m
+0.42 0 l
+o
+np
+82.24 1010.12 m
+0.51 0 l
+o
+np
+82.75 1003.27 m
+3.40 0 l
+o
+np
+86.15 996.03 m
+1.91 0 l
+o
+np
+88.06 991.20 m
+3.76 0 l
+o
+np
+88.06 1000.86 m
+0.20 0 l
+o
+np
+88.26 997.64 m
+4.31 0 l
+o
+np
+88.26 1004.08 m
+3.63 0 l
+o
+np
+86.15 1010.52 m
+6.82 0 l
+o
+np
+82.75 1016.96 m
+9.77 0 l
+o
+np
+82.24 1042.72 m
+0.98 0 l
+o
+np
+83.22 1033.06 m
+1.05 0 l
+o
+np
+84.27 1026.62 m
+3.51 0 l
+o
+np
+87.78 1023.40 m
+3.99 0 l
+o
+np
+87.78 1029.84 m
+3.28 0 l
+o
+np
+84.27 1039.50 m
+0.88 0 l
+o
+np
+85.15 1036.28 m
+8.04 0 l
+o
+np
+85.15 1042.72 m
+5.91 0 l
+o
+np
+83.22 1052.38 m
+0.36 0 l
+o
+np
+83.58 1049.16 m
+7.81 0 l
+o
+np
+83.58 1055.60 m
+7.75 0 l
+o
+np
+81.82 1062.04 m
+10.19 0 l
+o
+np
+78.36 1128.74 m
+0.72 0 l
+o
+np
+79.08 1101.08 m
+0.76 0 l
+o
+np
+79.84 1083.77 m
+0.73 0 l
+o
+np
+80.57 1076.52 m
+2.22 0 l
+o
+np
+82.79 1071.69 m
+1.00 0 l
+o
+np
+83.79 1068.48 m
+8.25 0 l
+o
+np
+83.79 1074.91 m
+8.78 0 l
+o
+np
+82.79 1081.35 m
+8.17 0 l
+o
+np
+80.57 1091.01 m
+4.73 0 l
+o
+np
+85.30 1087.79 m
+4.75 0 l
+o
+np
+85.30 1094.23 m
+5.95 0 l
+o
+np
+79.84 1118.38 m
+2.16 0 l
+o
+np
+82.00 1108.72 m
+1.46 0 l
+o
+np
+83.46 1103.89 m
+0.79 0 l
+o
+np
+84.25 1100.67 m
+8.78 0 l
+o
+np
+84.25 1107.11 m
+8.06 0 l
+o
+np
+83.46 1113.55 m
+8.34 0 l
+o
+np
+82.00 1128.04 m
+0.64 0 l
+o
+np
+82.64 1123.21 m
+4.56 0 l
+o
+np
+87.20 1119.99 m
+4.73 0 l
+o
+np
+87.20 1126.43 m
+4.52 0 l
+o
+np
+82.64 1132.87 m
+8.88 0 l
+o
+np
+79.08 1156.41 m
+4.77 0 l
+o
+np
+83.85 1142.53 m
+9.41 0 l
+o
+np
+93.26 1139.31 m
+0.38 0 l
+o
+np
+93.26 1145.75 m
+0.19 0 l
+o
+np
+83.85 1170.30 m
+4.72 0 l
+o
+np
+88.57 1159.43 m
+1.01 0 l
+o
+np
+89.58 1152.19 m
+2.61 0 l
+o
+np
+89.58 1166.68 m
+0.61 0 l
+o
+np
+90.19 1161.85 m
+0.14 0 l
+o
+np
+90.33 1158.63 m
+1.39 0 l
+o
+np
+90.33 1165.07 m
+1.58 0 l
+o
+np
+90.19 1171.51 m
+0.80 0 l
+o
+np
+88.57 1181.17 m
+1.24 0 l
+o
+np
+89.81 1177.95 m
+2.11 0 l
+o
+np
+89.81 1184.39 m
+2.08 0 l
+o
+np
+77.89 1194.05 m
+1.06 0 l
+o
+np
+78.95 1190.83 m
+15.87 0 l
+o
+np
+78.95 1197.27 m
+12.23 0 l
+o
+np
+77.32 1206.92 m
+2.00 0 l
+o
+np
+79.32 1203.70 m
+11.61 0 l
+o
+np
+79.32 1210.14 m
+13.25 0 l
+o
+np
+77.00 1231.88 m
+2.76 0 l
+o
+np
+79.76 1224.63 m
+1.37 0 l
+o
+np
+81.13 1219.80 m
+0.39 0 l
+o
+np
+81.52 1216.58 m
+11.11 0 l
+o
+np
+81.52 1223.02 m
+10.63 0 l
+o
+np
+81.13 1229.46 m
+6.88 0 l
+o
+np
+79.76 1239.12 m
+2.53 0 l
+o
+np
+82.29 1235.90 m
+7.11 0 l
+o
+np
+82.29 1242.34 m
+7.28 0 l
+o
+np
+76.45 1253.61 m
+4.29 0 l
+o
+np
+80.74 1248.78 m
+10.11 0 l
+o
+np
+80.74 1258.44 m
+1.72 0 l
+o
+np
+82.46 1255.22 m
+7.67 0 l
+o
+np
+82.46 1261.66 m
+8.18 0 l
+o
+np
+76.15 1284.60 m
+8.82 0 l
+o
+np
+84.97 1275.34 m
+2.04 0 l
+o
+np
+87.01 1268.10 m
+7.37 0 l
+o
+np
+87.01 1282.59 m
+4.81 0 l
+o
+np
+91.82 1277.76 m
+3.18 0 l
+o
+np
+95.00 1274.54 m
+0.11 0 l
+o
+np
+95.00 1280.98 m
+0.08 0 l
+o
+np
+91.82 1287.42 m
+3.20 0 l
+o
+np
+84.97 1293.86 m
+9.80 0 l
+o
+np
+75.23 1313.98 m
+0.82 0 l
+o
+np
+76.05 1308.35 m
+1.70 0 l
+o
+np
+77.75 1303.52 m
+10.72 0 l
+o
+np
+88.47 1300.30 m
+3.17 0 l
+o
+np
+88.47 1306.74 m
+3.48 0 l
+o
+np
+77.75 1313.18 m
+13.34 0 l
+o
+np
+76.05 1319.62 m
+11.87 0 l
+o
+np
+74.59 1326.06 m
+15.16 0 l
+o
+np
+67.71 1332.50 m
+7.26 0 l
+o
+np
+67.71 133.94 m
+0 1198.56 l
+o
+np
+67.86 126.69 m
+0 14.49 l
+o
+np
+69.03 121.87 m
+0 9.65 l
+o
+np
+70.78 128.30 m
+0 6.44 l
+o
+np
+72.09 161.31 m
+0 978.83 l
+o
+np
+72.91 152.45 m
+0 17.71 l
+o
+np
+76.53 147.62 m
+0 9.66 l
+o
+np
+81.66 154.06 m
+0 6.44 l
+o
+np
+75.67 166.94 m
+0 6.44 l
+o
+np
+74.59 954.22 m
+0 371.84 l
+o
+np
+75.23 594.45 m
+0 719.53 l
+o
+np
+75.46 210.86 m
+0 767.18 l
+o
+np
+76.34 187.87 m
+0 45.98 l
+o
+np
+87.54 179.82 m
+0 16.10 l
+o
+np
+88.42 189.48 m
+0 12.88 l
+o
+np
+90.09 186.26 m
+0 6.44 l
+o
+np
+89.76 199.14 m
+0 6.44 l
+o
+np
+77.07 212.02 m
+0 43.67 l
+o
+np
+77.42 232.95 m
+0 45.48 l
+o
+np
+78.32 223.29 m
+0 19.32 l
+o
+np
+83.32 218.46 m
+0 9.66 l
+o
+np
+85.14 224.90 m
+0 6.44 l
+o
+np
+86.59 237.78 m
+0 9.66 l
+o
+np
+87.39 244.22 m
+0 6.44 l
+o
+np
+78.16 267.56 m
+0 21.73 l
+o
+np
+80.26 260.31 m
+0 14.49 l
+o
+np
+81.85 257.10 m
+0 6.43 l
+o
+np
+89.46 269.97 m
+0 9.66 l
+o
+np
+90.73 276.41 m
+0 6.44 l
+o
+np
+75.68 708.28 m
+0 539.52 l
+o
+np
+76.11 658.78 m
+0 98.99 l
+o
+np
+76.76 592.00 m
+0 133.57 l
+o
+np
+78.91 486.25 m
+0 211.50 l
+o
+np
+80.73 422.93 m
+0 126.64 l
+o
+np
+82.53 408.46 m
+0 28.94 l
+o
+np
+83.32 389.18 m
+0 38.56 l
+o
+np
+84.25 360.28 m
+0 57.80 l
+o
+np
+84.88 322.90 m
+0 74.76 l
+o
+np
+85.17 309.42 m
+0 26.96 l
+o
+np
+85.69 303.78 m
+0 11.27 l
+o
+np
+86.10 298.95 m
+0 9.66 l
+o
+np
+87.32 295.73 m
+0 6.44 l
+o
+np
+85.67 324.71 m
+0 23.34 l
+o
+np
+85.97 321.49 m
+0 6.44 l
+o
+np
+87.65 342.42 m
+0 11.27 l
+o
+np
+88.69 337.59 m
+0 9.66 l
+o
+np
+90.58 334.37 m
+0 6.44 l
+o
+np
+85.14 386.89 m
+0 21.53 l
+o
+np
+85.20 375.02 m
+0 23.74 l
+o
+np
+85.61 363.35 m
+0 23.34 l
+o
+np
+90.03 360.13 m
+0 6.44 l
+o
+np
+86.07 381.06 m
+0 11.27 l
+o
+np
+86.81 376.23 m
+0 9.66 l
+o
+np
+88.84 373.01 m
+0 6.44 l
+o
+np
+85.60 405.20 m
+0 6.44 l
+o
+np
+84.13 424.52 m
+0 6.44 l
+o
+np
+81.66 512.01 m
+0 75.11 l
+o
+np
+81.86 468.19 m
+0 87.64 l
+o
+np
+82.26 448.67 m
+0 39.04 l
+o
+np
+83.28 443.84 m
+0 9.66 l
+o
+np
+85.40 450.28 m
+0 6.44 l
+o
+np
+82.81 472.82 m
+0 29.78 l
+o
+np
+84.20 466.38 m
+0 12.88 l
+o
+np
+84.81 463.16 m
+0 6.44 l
+o
+np
+86.24 476.04 m
+0 6.44 l
+o
+np
+84.70 496.97 m
+0 11.27 l
+o
+np
+85.20 492.14 m
+0 9.66 l
+o
+np
+89.77 488.92 m
+0 6.44 l
+o
+np
+83.75 539.03 m
+0 33.60 l
+o
+np
+83.92 522.73 m
+0 32.60 l
+o
+np
+85.08 517.90 m
+0 9.66 l
+o
+np
+85.60 514.68 m
+0 6.44 l
+o
+np
+85.13 547.68 m
+0 15.29 l
+o
+np
+85.72 542.04 m
+0 11.27 l
+o
+np
+88.02 537.21 m
+0 9.66 l
+o
+np
+89.21 533.99 m
+0 6.44 l
+o
+np
+89.05 559.75 m
+0 6.44 l
+o
+np
+82.29 582.29 m
+0 9.66 l
+o
+np
+83.83 579.07 m
+0 6.44 l
+o
+np
+79.44 684.41 m
+0 26.67 l
+o
+np
+80.93 672.23 m
+0 24.36 l
+o
+np
+81.93 662.36 m
+0 19.74 l
+o
+np
+83.02 649.05 m
+0 26.61 l
+o
+np
+83.85 636.12 m
+0 25.86 l
+o
+np
+84.50 628.78 m
+0 14.69 l
+o
+np
+88.39 620.53 m
+0 16.50 l
+o
+np
+88.65 610.46 m
+0 20.13 l
+o
+np
+89.17 601.61 m
+0 17.71 l
+o
+np
+89.96 598.39 m
+0 6.44 l
+o
+np
+89.58 614.49 m
+0 9.66 l
+o
+np
+90.17 611.27 m
+0 6.44 l
+o
+np
+84.68 654.74 m
+0 14.48 l
+o
+np
+86.36 649.91 m
+0 9.66 l
+o
+np
+88.41 656.35 m
+0 6.44 l
+o
+np
+85.47 691.76 m
+0 9.66 l
+o
+np
+89.77 688.54 m
+0 6.44 l
+o
+np
+81.82 707.86 m
+0 6.44 l
+o
+np
+79.58 720.74 m
+0 9.66 l
+o
+np
+88.73 727.18 m
+0 6.44 l
+o
+np
+76.93 749.72 m
+0 16.10 l
+o
+np
+77.68 743.28 m
+0 12.88 l
+o
+np
+81.90 740.06 m
+0 6.44 l
+o
+np
+85.19 752.94 m
+0 6.44 l
+o
+np
+76.15 1211.00 m
+0 73.60 l
+o
+np
+76.45 1168.39 m
+0 85.22 l
+o
+np
+77.00 1104.91 m
+0 126.97 l
+o
+np
+77.32 1002.89 m
+0 204.03 l
+o
+np
+77.53 874.16 m
+0 257.47 l
+o
+np
+80.61 814.16 m
+0 119.99 l
+o
+np
+82.60 772.26 m
+0 83.81 l
+o
+np
+85.09 843.29 m
+0 25.56 l
+o
+np
+86.03 827.39 m
+0 31.80 l
+o
+np
+91.31 805.25 m
+0 44.28 l
+o
+np
+91.81 778.70 m
+0 53.10 l
+o
+np
+92.29 823.72 m
+0 16.15 l
+o
+np
+92.53 817.23 m
+0 12.98 l
+o
+np
+93.47 810.69 m
+0 13.08 l
+o
+np
+93.61 804.05 m
+0 13.28 l
+o
+np
+93.81 797.21 m
+0 13.68 l
+o
+np
+93.96 789.97 m
+0 14.48 l
+o
+np
+94.05 785.14 m
+0 9.66 l
+o
+np
+94.05 791.58 m
+0 6.44 l
+o
+np
+92.72 836.65 m
+0 6.44 l
+o
+np
+89.94 855.97 m
+0 6.44 l
+o
+np
+83.09 912.52 m
+0 43.26 l
+o
+np
+83.94 890.99 m
+0 43.06 l
+o
+np
+89.06 880.92 m
+0 20.13 l
+o
+np
+91.60 875.29 m
+0 11.27 l
+o
+np
+92.65 881.73 m
+0 9.66 l
+o
+np
+92.93 888.17 m
+0 6.44 l
+o
+np
+85.78 925.20 m
+0 17.70 l
+o
+np
+86.54 917.15 m
+0 16.10 l
+o
+np
+87.64 910.71 m
+0 12.88 l
+o
+np
+89.55 907.49 m
+0 6.44 l
+o
+np
+89.20 920.37 m
+0 6.44 l
+o
+np
+88.74 939.68 m
+0 6.44 l
+o
+np
+86.88 952.56 m
+0 6.44 l
+o
+np
+77.89 1069.20 m
+0 124.85 l
+o
+np
+78.36 1009.66 m
+0 119.08 l
+o
+np
+80.42 975.10 m
+0 69.13 l
+o
+np
+80.99 968.66 m
+0 12.88 l
+o
+np
+86.13 965.44 m
+0 6.44 l
+o
+np
+82.33 978.32 m
+0 6.44 l
+o
+np
+81.82 1026.42 m
+0 35.62 l
+o
+np
+82.24 1010.12 m
+0 32.60 l
+o
+np
+82.75 1003.27 m
+0 13.69 l
+o
+np
+86.15 996.03 m
+0 14.49 l
+o
+np
+88.06 991.20 m
+0 9.66 l
+o
+np
+88.26 997.64 m
+0 6.44 l
+o
+np
+83.22 1033.06 m
+0 19.32 l
+o
+np
+84.27 1026.62 m
+0 12.88 l
+o
+np
+87.78 1023.40 m
+0 6.44 l
+o
+np
+85.15 1036.28 m
+0 6.44 l
+o
+np
+83.58 1049.16 m
+0 6.44 l
+o
+np
+79.08 1101.08 m
+0 55.33 l
+o
+np
+79.84 1083.77 m
+0 34.61 l
+o
+np
+80.57 1076.52 m
+0 14.49 l
+o
+np
+82.79 1071.69 m
+0 9.66 l
+o
+np
+83.79 1068.48 m
+0 6.43 l
+o
+np
+85.30 1087.79 m
+0 6.44 l
+o
+np
+82.00 1108.72 m
+0 19.32 l
+o
+np
+83.46 1103.89 m
+0 9.66 l
+o
+np
+84.25 1100.67 m
+0 6.44 l
+o
+np
+82.64 1123.21 m
+0 9.66 l
+o
+np
+87.20 1119.99 m
+0 6.44 l
+o
+np
+83.85 1142.53 m
+0 27.77 l
+o
+np
+93.26 1139.31 m
+0 6.44 l
+o
+np
+88.57 1159.43 m
+0 21.74 l
+o
+np
+89.58 1152.19 m
+0 14.49 l
+o
+np
+90.19 1161.85 m
+0 9.66 l
+o
+np
+90.33 1158.63 m
+0 6.44 l
+o
+np
+89.81 1177.95 m
+0 6.44 l
+o
+np
+78.95 1190.83 m
+0 6.44 l
+o
+np
+79.32 1203.70 m
+0 6.44 l
+o
+np
+79.76 1224.63 m
+0 14.49 l
+o
+np
+81.13 1219.80 m
+0 9.66 l
+o
+np
+81.52 1216.58 m
+0 6.44 l
+o
+np
+82.29 1235.90 m
+0 6.44 l
+o
+np
+80.74 1248.78 m
+0 9.66 l
+o
+np
+82.46 1255.22 m
+0 6.44 l
+o
+np
+84.97 1275.34 m
+0 18.52 l
+o
+np
+87.01 1268.10 m
+0 14.49 l
+o
+np
+91.82 1277.76 m
+0 9.66 l
+o
+np
+95.00 1274.54 m
+0 6.44 l
+o
+np
+76.05 1308.35 m
+0 11.27 l
+o
+np
+77.75 1303.52 m
+0 9.66 l
+o
+np
+88.47 1300.30 m
+0 6.44 l
+o
+/Font3 findfont 9 s
+75.58 119.62 (Notur) 0 ta
+0.135 (us gyr) tb
+0.135 (in) tb
+-0.090 (us) tb gr
+73.69 125.10 (Notur) 0 ta
+0.135 (us fla) tb
+-0.180 (vus) tb gr
+74.70 132.50 (Notur) 0 ta
+0.135 (us insignis) tb gr
+73.84 138.94 (Notur) 0 ta
+0.135 (us stigmosus) tb gr
+82.24 144.46 (Ameiur) 0 ta
+0.135 (us natalis) tb gr
+82.59 150.90 (Ameiur) 0 ta
+0.135 (us melas) tb gr
+83.51 157.34 (Ameiur) 0 ta
+0.135 (us neb) tb
+-0.180 (ulosus) tb gr
+81.91 164.64 (Ictalur) 0 ta
+0.135 (us punctatus) tb gr
+83.55 171.11 (Pylodictis oliv) 0 ta
+-0.225 (ar) tb
+0.135 (is) tb gr
+92.70 177.55 (Acipenser o) 0 ta
+-0.270 (xyr) tb
+0.135 (inchus) tb gr
+91.36 183.96 (Acipenser bre) 0 ta
+-0.270 (virostr) tb
+0.135 (um) tb gr
+91.59 190.36 (Acipenser fulv) 0 ta
+-0.225 (escens) tb gr
+91.70 196.84 (Acipenser medirostr) 0 ta
+0.135 (is) tb gr
+92.20 203.28 (Acipenser tr) 0 ta
+-0.090 (ansmontan) tb
+-0.090 (us) tb gr
+90.99 209.72 (Dallia pector) 0 ta
+-0.090 (alis) tb gr
+91.92 215.29 (Morone amer) 0 ta
+0.135 (icana) tb gr
+91.99 222.63 (Morone chr) 0 ta
+0.270 (ysops) tb gr
+91.71 228.17 (Morone saxatilis) 0 0 t
+93.29 235.42 (Spir) 0 ta
+0.135 (inchus thaleichth) tb
+-0.270 (ys) tb gr
+93.99 240.99 (Osmer) 0 ta
+0.135 (us mordax) tb gr
+93.05 248.34 (Thaleichth) 0 ta
+-0.270 (ys pacificus) tb gr
+93.89 253.93 (Eso) 0 ta
+-0.270 (x lucius) tb gr
+91.10 261.29 (Eso) 0 ta
+-0.270 (x masquinongy) tb gr
+91.16 266.81 (Eso) 0 ta
+-0.270 (x amer) tb
+0.135 (ican) tb
+-0.090 (us v) tb
+-0.225 (er) tb
+0.225 (miculatus) tb gr
+90.92 273.25 (Eso) 0 ta
+-0.270 (x amer) tb
+0.135 (ican) tb
+-0.090 (us amer) tb
+0.135 (ican) tb
+-0.090 (us) tb gr
+90.93 280.61 (Eso) 0 ta
+-0.270 (x niger) tb gr
+90.17 286.15 (Umbr) 0 ta
+-0.090 (a limi) tb gr
+90.20 292.57 (Luxilus cor) 0 ta
+0.225 (n) tb
+-0.090 (utus) tb gr
+91.00 299.90 (Luxilus chr) 0 ta
+0.270 (ysocephalus) tb gr
+91.91 306.37 (Notropis photogenis) 0 0 t
+91.59 312.75 (Notropis hudsonius) 0 0 t
+94.04 319.19 (Notropis str) 0 ta
+-0.090 (amineus) tb gr
+91.11 325.63 (Notropis heterodon) 0 0 t
+91.42 332.13 (Hybognathus regius) 0 0 t
+91.29 338.57 (Hybognathus hankinsoni) 0 0 t
+91.39 345.01 (Hybognathus argyr) 0 ta
+0.135 (itis) tb gr
+91.25 351.45 (Hybognathus placitus) 0 0 t
+90.15 357.83 (Notropis v) 0 ta
+-0.225 (olucellus) tb gr
+90.10 364.27 (Notropis b) 0 ta
+-0.180 (uchanani) tb gr
+90.99 370.71 (Notropis r) 0 ta
+0.135 (ubellus) tb gr
+90.06 377.15 (Notropis percobrom) 0 ta
+-0.090 (us) tb gr
+90.68 383.59 (Notropis ather) 0 ta
+0.135 (inoides) tb gr
+91.32 390.06 (L) 0 ta
+-0.270 (ythr) tb
+0.135 (ur) tb
+0.135 (us umbr) tb
+-0.090 (atilis) tb gr
+89.73 396.47 (Notropis heterolepis) 0 0 t
+91.84 402.86 (Notropis bifrenatus) 0 0 t
+91.39 409.40 (Notropis anogen) 0 ta
+-0.090 (us) tb gr
+91.75 415.82 (Macrh) 0 ta
+-0.270 (ybopsis storer) tb
+0.135 (iana) tb gr
+89.43 422.22 (Pimephales promelas) 0 0 t
+90.05 428.66 (Pimephales notatus) 0 0 t
+94.04 435.05 (Cypr) 0 ta
+0.135 (inella spilopter) tb
+-0.090 (a) tb gr
+92.04 440.68 (Tinca tinca) 0 0 t
+91.71 447.93 (Scardinius er) 0 ta
+0.270 (ythrophthalm) tb
+-0.090 (us) tb gr
+90.92 454.48 (Notemigon) 0 ta
+-0.090 (us cr) tb
+0.270 (ysoleucas) tb gr
+94.79 460.77 (Semotilus cor) 0 ta
+0.270 (por) tb
+-0.090 (alis) tb gr
+92.69 466.37 (Semotilus atromaculatus) 0 0 t
+93.05 473.80 (Margar) 0 ta
+0.135 (iscus margar) tb
+0.135 (ita) tb gr
+93.22 480.09 (Couesius plumbeus) 0 0 t
+92.34 486.68 (Ptychocheilus oregonensis) 0 0 t
+93.36 492.19 (Acrocheilus alutaceus) 0 0 t
+90.32 499.47 (Chrosom) 0 ta
+-0.090 (us neogaeus) tb gr
+90.04 505.01 (Chrosom) 0 ta
+-0.090 (us eos) tb gr
+91.44 511.51 (Richardsonius balteatus) 0 0 t
+89.87 518.79 (Clinostom) 0 ta
+-0.090 (us elongatus) tb gr
+91.21 525.29 (Mylocheilus caur) 0 ta
+0.135 (in) tb
+-0.090 (us) tb gr
+89.53 531.73 (Rhinichth) 0 ta
+-0.270 (ys umatilla) tb gr
+89.67 538.12 (Rhinichth) 0 ta
+-0.270 (ys f) tb
+-0.270 (alcatus) tb gr
+89.70 544.61 (Rhinichth) 0 ta
+-0.270 (ys osculus) tb gr
+89.24 551.05 (Rhinichth) 0 ta
+-0.270 (ys catar) tb
+-0.090 (actae) tb gr
+90.89 557.48 (Rhinichth) 0 ta
+-0.270 (ys obtusus) tb gr
+91.61 563.92 (Rhinichth) 0 ta
+-0.270 (ys atr) tb
+-0.090 (atulus) tb gr
+90.47 570.39 (Exoglossum maxillingua) 0 0 t
+90.35 576.83 (Nocomis micropogon) 0 0 t
+90.68 583.27 (Nocomis biguttatus) 0 0 t
+91.70 589.57 (Campostoma anomalum) 0 0 t
+92.23 595.23 (Mo) 0 ta
+-0.270 (xostoma v) tb
+-0.225 (alenciennesi) tb gr
+91.87 602.53 (Mo) 0 ta
+-0.270 (xostoma duquesnii) tb gr
+91.20 608.97 (Mo) 0 ta
+-0.270 (xostoma macrolepidotum) tb gr
+91.31 614.54 (Mo) 0 ta
+-0.270 (xostoma hub) tb
+-0.090 (bsi) tb gr
+91.78 620.98 (Mo) 0 ta
+-0.270 (xostoma anisur) tb
+0.135 (um) tb gr
+91.56 627.42 (Mo) 0 ta
+-0.270 (xostoma car) tb
+0.135 (inatum) tb gr
+92.74 634.76 (Mo) 0 ta
+-0.270 (xostoma er) tb
+0.270 (ythr) tb
+0.135 (ur) tb
+0.135 (um) tb gr
+92.70 641.20 (Min) 0 ta
+-0.135 (ytrema melanops) tb gr
+90.73 647.55 (Catostom) 0 ta
+-0.090 (us platyrh) tb
+-0.270 (ynchus) tb gr
+90.36 653.11 (Catostom) 0 ta
+-0.090 (us macrocheilus) tb gr
+90.41 659.55 (Catostom) 0 ta
+-0.090 (us commersonii) tb gr
+89.05 665.99 (Catostom) 0 ta
+-0.090 (us catostom) tb
+-0.090 (us) tb gr
+91.05 673.42 (Hypentelium nigr) 0 ta
+0.135 (icans) tb gr
+89.37 679.84 (Er) 0 ta
+0.135 (im) tb
+-0.135 (yz) tb
+-0.135 (on sucetta) tb gr
+90.20 686.30 (Ictiob) 0 ta
+-0.180 (us niger) tb gr
+89.92 692.71 (Ictiob) 0 ta
+-0.180 (us cypr) tb
+0.135 (inellus) tb gr
+89.73 699.07 (Car) 0 ta
+0.270 (piodes cypr) tb
+0.135 (in) tb
+-0.090 (us) tb gr
+89.18 705.51 (Cypr) 0 ta
+0.135 (in) tb
+-0.090 (us car) tb
+0.270 (pio) tb gr
+90.02 711.07 (Car) 0 ta
+-0.090 (assius aur) tb
+-0.090 (atus) tb gr
+92.34 718.44 (Dorosoma cepedian) 0 ta
+-0.090 (um) tb gr
+90.97 724.88 (Alosa sapidissima) 0 0 t
+90.90 731.38 (Alosa pseudoharengus) 0 0 t
+90.04 737.82 (Microgadus tomcod) 0 0 t
+91.73 743.34 (Lota lota) 0 0 t
+89.04 750.70 (Hiodon tergisus) 0 0 t
+90.08 756.21 (Hiodon alosoides) 0 0 t
+90.97 763.58 (Aplodinotus gr) 0 ta
+0.135 (unniens) tb gr
+91.06 769.99 (Th) 0 ta
+-0.270 (ymallus arcticus) tb gr
+93.81 776.34 (Stenodus leucichth) 0 ta
+-0.270 (ys) tb gr
+94.05 782.81 (Coregon) 0 ta
+-0.090 (us z) tb
+-0.135 (enithicus) tb gr
+94.05 789.25 (Coregon) 0 ta
+-0.090 (us nigr) tb
+0.135 (ipinnis) tb gr
+94.05 795.69 (Coregon) 0 ta
+-0.090 (us kiyi) tb gr
+94.07 802.13 (Coregon) 0 ta
+-0.090 (us ho) tb
+-0.270 (yi) tb gr
+93.91 808.57 (Coregon) 0 ta
+-0.090 (us ar) tb
+0.360 (tedi) tb gr
+93.92 815.01 (Coregon) 0 ta
+-0.090 (us laurettae) tb gr
+93.72 821.45 (Coregon) 0 ta
+-0.090 (us autumnalis) tb gr
+93.09 827.89 (Coregon) 0 ta
+-0.090 (us sardinella) tb gr
+93.04 834.33 (Coregon) 0 ta
+-0.090 (us nasus) tb gr
+93.57 840.77 (Coregon) 0 ta
+-0.090 (us clupeaf) tb
+-0.270 (or) tb
+0.225 (mis) tb gr
+93.40 847.20 (Coregon) 0 ta
+-0.090 (us huntsmani) tb gr
+92.24 853.67 (Prosopium williamsoni) 0 0 t
+92.01 860.14 (Prosopium cylindr) 0 ta
+-0.090 (aceum) tb gr
+92.55 866.55 (Prosopium coulter) 0 ta
+0.135 (ii) tb gr
+92.62 872.94 (Salv) 0 ta
+-0.225 (elin) tb
+-0.090 (us nama) tb
+-0.270 (ycush) tb gr
+92.96 878.50 (Salv) 0 ta
+-0.225 (elin) tb
+-0.090 (us malma) tb gr
+93.32 884.94 (Salv) 0 ta
+-0.225 (elin) tb
+-0.090 (us confluentus) tb gr
+93.52 892.22 (Salv) 0 ta
+-0.225 (elin) tb
+-0.090 (us alpin) tb
+-0.090 (us) tb gr
+91.84 897.82 (Salv) 0 ta
+-0.225 (elin) tb
+-0.090 (us f) tb
+-0.270 (ontinalis) tb gr
+91.87 905.13 (Oncorh) 0 ta
+-0.270 (ynchus tsha) tb
+-0.180 (wytscha) tb gr
+92.41 911.57 (Oncorh) 0 ta
+-0.270 (ynchus kisutch) tb gr
+92.33 918.01 (Oncorh) 0 ta
+-0.270 (ynchus m) tb
+-0.135 (ykiss) tb gr
+90.88 924.45 (Oncorh) 0 ta
+-0.270 (ynchus clar) tb
+0.135 (ki) tb gr
+91.72 930.89 (Oncorh) 0 ta
+-0.270 (ynchus ner) tb
+0.135 (ka) tb gr
+91.88 937.33 (Oncorh) 0 ta
+-0.270 (ynchus k) tb
+-0.180 (eta) tb gr
+92.07 943.80 (Oncorh) 0 ta
+-0.270 (ynchus gorb) tb
+-0.180 (uscha) tb gr
+91.39 949.33 (Salmo tr) 0 ta
+0.135 (utta) tb gr
+91.86 955.77 (Salmo salar) 0 0 t
+91.82 962.21 (Sander vitreus) 0 0 t
+91.45 968.65 (Sander canadensis) 0 0 t
+91.86 975.11 (P) 0 ta
+-0.450 (erca fla) tb
+-0.180 (v) tb
+-0.225 (escens) tb gr
+94.07 982.41 (Gymnocephalus cer) 0 ta
+0.225 (n) tb
+-0.090 (uus) tb gr
+91.82 988.04 (P) 0 ta
+-0.450 (ercina shumardi) tb gr
+92.57 994.48 (P) 0 ta
+-0.450 (ercina maculata) tb gr
+91.89 1001.78 (P) 0 ta
+-0.450 (ercina copelandi) tb gr
+92.97 1008.22 (P) 0 ta
+-0.450 (ercina caprodes) tb gr
+92.52 1014.69 (Ammocr) 0 ta
+0.270 (ypta pellucida) tb gr
+91.77 1020.23 (Etheostoma olmstedi) 0 0 t
+91.06 1027.60 (Etheostoma nigr) 0 ta
+0.135 (um) tb gr
+93.19 1033.11 (Etheostoma e) 0 ta
+-0.270 (xile) tb gr
+91.06 1039.55 (Etheostoma caer) 0 ta
+0.135 (uleum) tb gr
+91.39 1045.95 (Etheostoma flabellare) 0 0 t
+91.33 1052.43 (Etheostoma b) 0 ta
+-0.180 (lennioides) tb gr
+92.01 1059.74 (Etheostoma microperca) 0 0 t
+92.04 1066.23 (P) 0 ta
+-0.450 (omo) tb
+-0.270 (xis nigromaculatus) tb gr
+92.57 1071.75 (P) 0 ta
+-0.450 (omo) tb
+-0.270 (xis ann) tb
+-0.090 (ular) tb
+0.135 (is) tb gr
+90.96 1079.05 (Amb) 0 ta
+-0.180 (loplites r) tb
+0.135 (upestr) tb
+0.135 (is) tb gr
+90.05 1085.49 (Micropter) 0 ta
+0.135 (us salmoides) tb gr
+91.25 1091.93 (Micropter) 0 ta
+0.135 (us dolomieu) tb gr
+93.03 1098.43 (Lepomis megalotis) 0 0 t
+92.31 1104.87 (Lepomis gib) 0 ta
+-0.090 (bosus) tb gr
+91.80 1111.25 (Lepomis aur) 0 ta
+0.135 (itus) tb gr
+91.93 1117.69 (Lepomis macrochir) 0 ta
+0.135 (us) tb gr
+91.72 1124.13 (Lepomis humilis) 0 0 t
+91.52 1130.60 (Lepomis cy) 0 ta
+-0.180 (anellus) tb gr
+93.64 1137.04 (My) 0 ta
+-0.180 (o) tb
+-0.270 (xocephalus thompsonii) tb gr
+93.45 1143.48 (My) 0 ta
+-0.180 (o) tb
+-0.270 (xocephalus quadr) tb
+0.135 (icor) tb
+0.225 (nis) tb gr
+92.19 1148.96 (Cottus r) 0 ta
+0.135 (icei) tb gr
+91.72 1155.40 (Cottus rhotheus) 0 0 t
+91.91 1162.74 (Cottus cognatus) 0 0 t
+90.99 1168.28 (Cottus bairdii) 0 0 t
+91.92 1175.56 (Cottus asper) 0 0 t
+91.89 1181.16 (Cottus aleuticus) 0 0 t
+94.82 1188.56 (P) 0 ta
+-0.450 (ercopsis omiscoma) tb
+-0.270 (ycus) tb gr
+91.18 1194.10 (Labidesthes sicculus) 0 0 t
+90.93 1200.54 (Proterorhin) 0 ta
+-0.090 (us mar) tb
+0.225 (mor) tb
+-0.090 (atus) tb gr
+92.57 1207.90 (Neogobius melanostom) 0 ta
+-0.090 (us) tb gr
+92.63 1214.34 (Pungitius pungitius) 0 0 t
+92.15 1220.72 (Apeltes quadr) 0 ta
+-0.090 (acus) tb gr
+88.01 1226.23 (Culaea inconstans) 0 0 t
+89.40 1232.67 (Gasterosteus wheatlandi) 0 0 t
+89.57 1239.11 (Gasterosteus aculeatus) 0 0 t
+90.85 1245.62 (Fundulus notatus) 0 0 t
+90.13 1252.06 (Fundulus heteroclitus) 0 0 t
+90.64 1259.36 (Fundulus diaphan) 0 ta
+-0.090 (us) tb gr
+94.38 1265.83 (P) 0 ta
+-0.450 (etrom) tb
+-0.135 (yz) tb
+-0.135 (on mar) tb
+0.135 (in) tb
+-0.090 (us) tb gr
+95.11 1272.27 (Ichth) 0 ta
+-0.270 (y) tb
+-0.180 (om) tb
+-0.135 (yz) tb
+-0.135 (on unicuspis) tb gr
+95.08 1278.67 (Ichth) 0 ta
+-0.270 (y) tb
+-0.180 (om) tb
+-0.135 (yz) tb
+-0.135 (on f) tb
+-0.270 (ossor) tb gr
+95.02 1285.15 (Ichth) 0 ta
+-0.270 (y) tb
+-0.180 (om) tb
+-0.135 (yz) tb
+-0.135 (on castaneus) tb gr
+94.77 1291.56 (Lethenteron appendix) 0 0 t
+91.64 1298.00 (Lepisosteus osseus) 0 0 t
+91.95 1304.44 (Lepisosteus oculatus) 0 0 t
+91.09 1310.01 (Amia calv) 0 ta
+-0.225 (a) tb gr
+87.92 1317.38 (Anguilla rostr) 0 ta
+-0.090 (ata) tb gr
+89.75 1323.74 (Platichth) 0 ta
+-0.270 (ys flesus) tb gr
+74.97 1329.33 (Notur) 0 ta
+0.135 (us miur) tb
+0.135 (us) tb gr
+ep
+%%Trailer
+%%Pages: 1
+%%EOF

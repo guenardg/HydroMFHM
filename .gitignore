@@ -1,0 +1,6 @@
+/Archive
+/config
+/Data
+*.RData
+*.Rhistory
+rsync*.sh

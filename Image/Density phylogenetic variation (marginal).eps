@@ -1,0 +1,865 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Helvetica-Oblique
+%%+ font Helvetica-BoldOblique
+%%+ font Symbol
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%BoundingBox: 0 0 359 468
+%%EndComments
+%%BeginProlog
+/bp  { gs sRGB gs } def
+% begin .ps.prolog
+/gs  { gsave } bind def
+/gr  { grestore } bind def
+/ep  { showpage gr gr } bind def
+/m   { moveto } bind def
+/l  { rlineto } bind def
+/np  { newpath } bind def
+/cp  { closepath } bind def
+/f   { fill } bind def
+/o   { stroke } bind def
+/c   { newpath 0 360 arc } bind def
+/r   { 4 2 roll moveto 1 copy 3 -1 roll exch 0 exch rlineto 0 rlineto -1 mul 0 exch rlineto closepath } bind def
+/p1  { stroke } bind def
+/p2  { gsave bg fill grestore newpath } bind def
+/p3  { gsave bg fill grestore stroke } bind def
+/p6  { gsave bg eofill grestore newpath } bind def
+/p7  { gsave bg eofill grestore stroke } bind def
+/t   { 5 -2 roll moveto gsave rotate
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } bind def
+/ta  { 4 -2 roll moveto gsave rotate show } bind def
+/tb  { 2 -1 roll 0 rmoveto show } bind def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } bind def
+/rgb { setrgbcolor } bind def
+/s   { scalefont setfont } bind def
+% end   .ps.prolog
+/sRGB { [ /CIEBasedABC
+          << /DecodeLMN
+               [ { dup 0.03928 le
+                        {12.92321 div}
+                        {0.055 add 1.055 div 2.4 exp }
+                     ifelse
+                 } bind dup dup
+               ]
+             /MatrixLMN [0.412457 0.212673 0.019334
+                         0.357576 0.715152 0.119192
+                         0.180437 0.072175 0.950301]
+             /WhitePoint [0.9505 1.0 1.0890]
+           >>
+         ] setcolorspace } bind def
+/srgb { setcolor } bind def
+%%IncludeResource: font Helvetica
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font Helvetica-Oblique
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font Helvetica-BoldOblique
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font Symbol
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+14.40 57.60 251.47 438.72 cl
+0.00 0.00 251.47 467.52 cl
+14.40 57.60 251.47 438.72 cl
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+23.18 152.59 m
+1.00 0 l
+o
+np
+24.18 82.98 m
+0.48 0 l
+o
+np
+24.66 75.47 m
+7.21 0 l
+o
+np
+31.87 71.72 m
+22.19 0 l
+o
+np
+31.87 79.22 m
+24.43 0 l
+o
+np
+24.66 90.49 m
+5.78 0 l
+o
+np
+30.44 86.73 m
+33.64 0 l
+o
+np
+30.44 94.24 m
+25.69 0 l
+o
+np
+24.18 222.20 m
+0.92 0 l
+o
+np
+25.10 192.49 m
+6.00 0 l
+o
+np
+31.10 156.54 m
+3.88 0 l
+o
+np
+34.98 129.44 m
+5.55 0 l
+o
+np
+40.53 115.83 m
+3.34 0 l
+o
+np
+43.87 105.50 m
+0.61 0 l
+o
+np
+44.48 101.75 m
+10.76 0 l
+o
+np
+44.48 109.26 m
+18.99 0 l
+o
+np
+43.87 126.15 m
+0.67 0 l
+o
+np
+44.54 120.52 m
+0.88 0 l
+o
+np
+45.42 116.77 m
+9.73 0 l
+o
+np
+45.42 124.27 m
+11.51 0 l
+o
+np
+44.54 131.78 m
+9.70 0 l
+o
+np
+40.53 143.04 m
+1.74 0 l
+o
+np
+42.27 139.29 m
+11.32 0 l
+o
+np
+42.27 146.80 m
+12.66 0 l
+o
+np
+34.98 183.64 m
+2.43 0 l
+o
+np
+37.41 166.04 m
+0.86 0 l
+o
+np
+38.27 154.31 m
+18.53 0 l
+o
+np
+38.27 177.77 m
+1.17 0 l
+o
+np
+39.44 171.20 m
+2.96 0 l
+o
+np
+42.40 165.57 m
+1.32 0 l
+o
+np
+43.72 161.81 m
+21.35 0 l
+o
+np
+43.72 169.32 m
+16.85 0 l
+o
+np
+42.40 176.83 m
+19.30 0 l
+o
+np
+39.44 184.34 m
+18.61 0 l
+o
+np
+37.41 201.23 m
+4.04 0 l
+o
+np
+41.45 195.60 m
+2.94 0 l
+o
+np
+44.39 191.85 m
+8.81 0 l
+o
+np
+44.39 199.36 m
+13.88 0 l
+o
+np
+41.45 206.86 m
+14.38 0 l
+o
+np
+31.10 228.45 m
+10.55 0 l
+o
+np
+41.65 218.13 m
+12.27 0 l
+o
+np
+53.92 214.37 m
+3.46 0 l
+o
+np
+53.92 221.88 m
+4.70 0 l
+o
+np
+41.65 238.77 m
+1.78 0 l
+o
+np
+43.43 233.14 m
+3.59 0 l
+o
+np
+47.02 229.39 m
+9.35 0 l
+o
+np
+47.02 236.90 m
+8.68 0 l
+o
+np
+43.43 244.41 m
+9.36 0 l
+o
+np
+25.10 251.91 m
+33.42 0 l
+o
+np
+23.18 390.55 m
+0.63 0 l
+o
+np
+23.81 364.01 m
+1.19 0 l
+o
+np
+25.00 322.19 m
+1.12 0 l
+o
+np
+26.12 272.09 m
+6.59 0 l
+o
+np
+32.71 259.42 m
+24.89 0 l
+o
+np
+32.71 284.76 m
+5.32 0 l
+o
+np
+38.03 276.32 m
+1.82 0 l
+o
+np
+39.85 270.68 m
+10.96 0 l
+o
+np
+50.81 266.93 m
+9.10 0 l
+o
+np
+50.81 274.44 m
+5.94 0 l
+o
+np
+39.85 281.95 m
+17.96 0 l
+o
+np
+38.03 293.21 m
+8.10 0 l
+o
+np
+46.13 289.46 m
+9.66 0 l
+o
+np
+46.13 296.96 m
+10.67 0 l
+o
+np
+26.12 372.28 m
+0.77 0 l
+o
+np
+26.89 349.99 m
+1.02 0 l
+o
+np
+27.91 320.90 m
+4.40 0 l
+o
+np
+32.31 308.23 m
+1.23 0 l
+o
+np
+33.54 304.47 m
+23.17 0 l
+o
+np
+33.54 311.98 m
+23.25 0 l
+o
+np
+32.31 333.57 m
+3.90 0 l
+o
+np
+36.21 323.24 m
+8.37 0 l
+o
+np
+44.58 319.49 m
+12.27 0 l
+o
+np
+44.58 327.00 m
+14.59 0 l
+o
+np
+36.21 343.89 m
+2.09 0 l
+o
+np
+38.30 338.26 m
+2.26 0 l
+o
+np
+40.56 334.50 m
+15.28 0 l
+o
+np
+40.56 342.01 m
+19.08 0 l
+o
+np
+38.30 349.52 m
+17.50 0 l
+o
+np
+27.91 379.09 m
+1.53 0 l
+o
+np
+29.44 371.11 m
+1.63 0 l
+o
+np
+31.07 362.66 m
+1.56 0 l
+o
+np
+32.63 357.03 m
+22.25 0 l
+o
+np
+32.63 368.29 m
+10.13 0 l
+o
+np
+42.76 364.54 m
+10.17 0 l
+o
+np
+42.76 372.05 m
+12.73 0 l
+o
+np
+31.07 379.55 m
+26.70 0 l
+o
+np
+29.44 387.06 m
+27.46 0 l
+o
+np
+26.89 394.57 m
+36.24 0 l
+o
+np
+25.00 405.83 m
+5.91 0 l
+o
+np
+30.91 402.08 m
+17.65 0 l
+o
+np
+30.91 409.59 m
+20.98 0 l
+o
+np
+23.81 417.10 m
+30.38 0 l
+o
+np
+23.18 424.60 m
+39.84 0 l
+o
+np
+23.18 152.59 m
+0 272.01 l
+o
+np
+31.87 71.72 m
+0 7.50 l
+o
+np
+24.66 75.47 m
+0 15.02 l
+o
+np
+30.44 86.73 m
+0 7.51 l
+o
+np
+24.18 82.98 m
+0 139.22 l
+o
+np
+25.10 192.49 m
+0 59.42 l
+o
+np
+31.10 156.54 m
+0 71.91 l
+o
+np
+34.98 129.44 m
+0 54.20 l
+o
+np
+40.53 115.83 m
+0 27.21 l
+o
+np
+43.87 105.50 m
+0 20.65 l
+o
+np
+44.48 101.75 m
+0 7.51 l
+o
+np
+44.54 120.52 m
+0 11.26 l
+o
+np
+45.42 116.77 m
+0 7.50 l
+o
+np
+42.27 139.29 m
+0 7.51 l
+o
+np
+37.41 166.04 m
+0 35.19 l
+o
+np
+38.27 154.31 m
+0 23.46 l
+o
+np
+39.44 171.20 m
+0 13.14 l
+o
+np
+42.40 165.57 m
+0 11.26 l
+o
+np
+43.72 161.81 m
+0 7.51 l
+o
+np
+41.45 195.60 m
+0 11.26 l
+o
+np
+44.39 191.85 m
+0 7.51 l
+o
+np
+41.65 218.13 m
+0 20.64 l
+o
+np
+53.92 214.37 m
+0 7.51 l
+o
+np
+43.43 233.14 m
+0 11.27 l
+o
+np
+47.02 229.39 m
+0 7.51 l
+o
+np
+23.81 364.01 m
+0 53.09 l
+o
+np
+25.00 322.19 m
+0 83.64 l
+o
+np
+26.12 272.09 m
+0 100.19 l
+o
+np
+32.71 259.42 m
+0 25.34 l
+o
+np
+38.03 276.32 m
+0 16.89 l
+o
+np
+39.85 270.68 m
+0 11.27 l
+o
+np
+50.81 266.93 m
+0 7.51 l
+o
+np
+46.13 289.46 m
+0 7.50 l
+o
+np
+26.89 349.99 m
+0 44.58 l
+o
+np
+27.91 320.90 m
+0 58.19 l
+o
+np
+32.31 308.23 m
+0 25.34 l
+o
+np
+33.54 304.47 m
+0 7.51 l
+o
+np
+36.21 323.24 m
+0 20.65 l
+o
+np
+44.58 319.49 m
+0 7.51 l
+o
+np
+38.30 338.26 m
+0 11.26 l
+o
+np
+40.56 334.50 m
+0 7.51 l
+o
+np
+29.44 371.11 m
+0 15.95 l
+o
+np
+31.07 362.66 m
+0 16.89 l
+o
+np
+32.63 357.03 m
+0 11.26 l
+o
+np
+42.76 364.54 m
+0 7.51 l
+o
+np
+30.91 402.08 m
+0 7.51 l
+o
+/Font3 findfont 10 s
+54.06 68.15 (Notur) 0 ta
+0.150 (us fla) tb
+-0.200 (vus) tb gr
+56.30 75.71 (Ameiur) 0 ta
+0.150 (us neb) tb
+-0.200 (ulosus) tb gr
+64.08 83.22 (Eso) 0 ta
+-0.300 (x lucius) tb gr
+56.13 90.75 (Umbr) 0 ta
+-0.100 (a limi) tb gr
+55.24 98.23 (Luxilus cor) 0 ta
+0.250 (n) tb
+-0.100 (utus) tb gr
+63.47 106.70 (Notropis str) 0 ta
+-0.100 (amineus) tb gr
+55.15 114.21 (Notropis v) 0 ta
+-0.250 (olucellus) tb gr
+56.93 121.72 (Notropis r) 0 ta
+0.150 (ubellus) tb gr
+54.24 129.23 (Notropis heterolepis) 0 0 t
+53.59 136.73 (Pimephales promelas) 0 0 t
+54.93 144.24 (Pimephales notatus) 0 0 t
+56.80 151.82 (Notemigon) 0 ta
+-0.100 (us cr) tb
+0.300 (ysoleucas) tb gr
+65.07 159.16 (Semotilus cor) 0 ta
+0.300 (por) tb
+-0.100 (alis) tb gr
+60.57 165.73 (Semotilus atromaculatus) 0 0 t
+61.70 174.18 (Couesius plumbeus) 0 0 t
+58.05 181.78 (Pho) 0 ta
+-0.300 (xin) tb
+-0.100 (us ssp) tb
+-0.350 (.) tb gr
+53.20 189.33 (Rhinichth) 0 ta
+-0.300 (ys catar) tb
+-0.100 (actae) tb gr
+58.27 196.84 (Rhinichth) 0 ta
+-0.300 (ys atr) tb
+-0.100 (atulus) tb gr
+55.83 204.37 (Exoglossum maxillingua) 0 0 t
+57.38 211.82 (Mo) 0 ta
+-0.300 (xostoma macrolepidotum) tb gr
+58.62 218.37 (Mo) 0 ta
+-0.300 (xostoma anisur) tb
+0.150 (um) tb gr
+56.37 226.77 (Catostom) 0 ta
+-0.100 (us platyrh) tb
+-0.300 (ynchus) tb gr
+55.70 233.31 (Catostom) 0 ta
+-0.100 (us commersonii) tb gr
+52.79 240.82 (Catostom) 0 ta
+-0.100 (us catostom) tb
+-0.100 (us) tb gr
+58.52 248.40 (Lota lota) 0 0 t
+57.60 256.87 (Prosopium williamsoni) 0 0 t
+59.91 263.34 (Salv) 0 ta
+-0.250 (elin) tb
+-0.100 (us confluentus) tb gr
+56.75 270.85 (Salv) 0 ta
+-0.250 (elin) tb
+-0.100 (us f) tb
+-0.300 (ontinalis) tb gr
+57.81 279.33 (Oncorh) 0 ta
+-0.300 (ynchus m) tb
+-0.150 (ykiss) tb gr
+55.79 285.87 (Salmo tr) 0 ta
+0.150 (utta) tb gr
+56.80 293.37 (Salmo salar) 0 0 t
+56.71 300.88 (Sander vitreus) 0 0 t
+56.79 308.42 (P) 0 ta
+-0.500 (erca fla) tb
+-0.200 (v) tb
+-0.250 (escens) tb gr
+56.85 316.93 (P) 0 ta
+-0.500 (ercina copelandi) tb gr
+59.17 324.44 (P) 0 ta
+-0.500 (ercina caprodes) tb gr
+55.84 332.01 (Etheostoma nigr) 0 ta
+0.150 (um - E. olmstedi) tb gr
+59.64 338.50 (Etheostoma e) 0 ta
+-0.300 (xile) tb gr
+55.80 345.96 (Etheostoma flabellare) 0 0 t
+54.88 354.47 (Amb) 0 ta
+-0.200 (loplites r) tb
+0.150 (upestr) tb
+0.150 (is) tb gr
+52.93 361.98 (Micropter) 0 ta
+0.150 (us salmoides) tb gr
+55.49 369.49 (Micropter) 0 ta
+0.150 (us dolomieu) tb gr
+57.77 377.06 (Lepomis gib) 0 ta
+-0.100 (bosus) tb gr
+56.90 384.48 (Cottus cognatus) 0 0 t
+63.13 392.05 (P) 0 ta
+-0.500 (ercopsis omiscoma) tb
+-0.300 (ycus) tb gr
+48.56 398.49 (Culaea inconstans) 0 0 t
+51.89 406.00 (Gasterosteus aculeatus) 0 0 t
+54.19 414.54 (Fundulus diaphan) 0 ta
+-0.100 (us) tb gr
+63.02 422.05 (Lethenteron appendix) 0 0 t
+251.47 0.00 359.25 467.52 cl
+/bg { 0.7451 0.7451 0.7451 srgb } def
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+297.02 71.72 2.70 c p3
+297.00 79.22 2.70 c p3
+296.64 86.73 2.70 c p3
+297.07 94.24 2.70 c p3
+333.34 101.75 2.70 c p3
+332.63 109.26 2.70 c p3
+332.89 116.77 2.70 c p3
+333.08 124.27 2.70 c p3
+332.19 131.78 2.70 c p3
+331.43 139.29 2.70 c p3
+331.57 146.80 2.70 c p3
+332.46 154.31 2.70 c p3
+341.39 161.81 2.70 c p3
+338.56 169.32 2.70 c p3
+337.12 176.83 2.70 c p3
+333.52 184.34 2.70 c p3
+334.09 191.85 2.70 c p3
+334.96 199.36 2.70 c p3
+334.02 206.86 2.70 c p3
+330.65 214.37 2.70 c p3
+330.77 221.88 2.70 c p3
+331.46 229.39 2.70 c p3
+334.78 236.90 2.70 c p3
+331.57 244.41 2.70 c p3
+300.38 251.91 2.70 c p3
+269.68 259.42 2.70 c p3
+256.56 266.93 2.70 c p3
+254.93 274.44 2.70 c p3
+260.06 281.95 2.70 c p3
+256.27 289.46 2.70 c p3
+256.60 296.96 2.70 c p3
+280.02 304.47 2.70 c p3
+279.25 311.98 2.70 c p3
+278.17 319.49 2.70 c p3
+277.51 327.00 2.70 c p3
+278.84 334.50 2.70 c p3
+279.20 342.01 2.70 c p3
+278.91 349.52 2.70 c p3
+278.16 357.03 2.70 c p3
+276.94 364.54 2.70 c p3
+274.24 372.05 2.70 c p3
+279.30 379.55 2.70 c p3
+280.25 387.06 2.70 c p3
+282.93 394.57 2.70 c p3
+287.85 402.08 2.70 c p3
+287.72 409.59 2.70 c p3
+292.05 417.10 2.70 c p3
+293.18 424.60 2.70 c p3
+0.00 0.00 359.25 467.52 cl
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+259.93 57.60 m
+58.63 0 l
+o
+np
+259.93 57.60 m
+0 -7.20 l
+o
+np
+289.24 57.60 m
+0 -7.20 l
+o
+np
+318.56 57.60 m
+0 -7.20 l
+o
+/Font1 findfont 12 s
+264.24 43.20 (-5.5) 1 90 t
+293.55 43.20 (-5.0) 1 90 t
+322.86 43.20 (-4.5) 1 90 t
+251.47 57.60 344.85 438.72 cl
+0 0 0 srgb
+0.75 setlinewidth
+[ 0.00 3.00] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+299.10 57.60 m
+0 381.12 l
+o
+14.40 57.60 344.85 438.72 cl
+ep
+%%Trailer
+%%Pages: 1
+%%EOF
