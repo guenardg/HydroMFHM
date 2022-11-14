@@ -6,7 +6,7 @@ in their river habitats in Canada. These models are developed using a framework
 described in the present paper:
 
 Guénard, G., G. Lanthier, S. Harvey-Lavoie, C. J. Macnaughton, C. Senay,
-M. Lapointe, P. Legendre, et D. Boisclair. 2017.
+M. Lapointe, P. Legendre, and D. Boisclair. 2017.
 _Modelling habitat distributions for multiple species using phylogenetics_.
 Ecography **40**: 1088–1097. https://doi.org/10.1111/ecog.02423
 
